@@ -6,5 +6,7 @@
 
 <br />
 
+<img align="left" alt="Andy's Github Stats" src="https://github-readme-stats.vercel.app/api?username=AndreasTar&show_icons=true&hide_border=true"/>
+
 [discord]: https://github.com/Rapptz/discord.py
 [unity]: https://unity.com/
