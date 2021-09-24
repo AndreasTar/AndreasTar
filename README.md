@@ -6,10 +6,17 @@
 
 <br />
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=AndreasTar&show_icons=true&hide_border=true&hide=issues,contribs&count_private=true&theme=github_dark)](https://github.com/anuraghazra/github-readme-stats)
+<!-- [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=AndreasTar&show_icons=true&hide_border=true&hide=issues,contribs&count_private=true&theme=github_dark)](https://github.com/anuraghazra/github-readme-stats)
 
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AndreasTar&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AndreasTar&layout=compact)](https://github.com/anuraghazra/github-readme-stats) -->
+
+<a href="https://github.com/anuraghazra/github-readme-stats">
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=AndreasTar&show_icons=true&hide_border=true&hide=issues,contribs&count_private=true&theme=github_dark" />
+</a>
+<a href="https://github.com/anuraghazra/github-readme-stats">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AndreasTar&layout=compact&theme=github_dark" />
+</a>
 
 
 [discord]: https://github.com/Rapptz/discord.py
