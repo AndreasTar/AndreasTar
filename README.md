@@ -1,9 +1,10 @@
 ### Hi, I'm Andreas, but people call me Andy.
 
 ## I'm a university student, studying 'Computer Science and Engineering'.
-- I'm interested in Game Development and Game Design, and all the algorithms that make games possible and light-weight.
-- Currently working on 3 games in [Unity][unity] and some side projects, like a discord bot using [Discord.py][discord] API.
-- I'm planning on learning OpenGL and Web-Development.
+- I'm interested in Game Development and Game Design, and all the algorithms that make games possible, light-weight and visually amazing.
+- Currently working on 3 games in [Unity][unity] and some side projects, like a discord bot using [Discord.py][discord] API and an [mclink][Minecraft] clone using C# and     [opentklink][OpenTK].
+- Currently learning OpenGL.
+- I'm planning on learning Vulkan and everything Shader, Web-Development and C++.
 
 <br />
 
@@ -22,3 +23,5 @@
 
 [discord]: https://github.com/Rapptz/discord.py
 [unity]: https://unity.com/
+[mclink]: https://www.minecraft.net/en-us
+[opentklink]: https://opentk.net/
