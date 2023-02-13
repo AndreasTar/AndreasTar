@@ -2,7 +2,7 @@
 
 ## I'm a university student, studying 'Computer Science and Engineering'.
 - I'm interested in Game Development and Game Design, and all the algorithms that make games possible, light-weight and visually amazing.
-- Currently working on 3 games in [Unity][unity] and some side projects, like a discord bot using [Discord.py][discord] API and an [mclink][Minecraft] clone using C# and     [opentklink][OpenTK].
+- Currently working on 3 games in [Unity][unity] and some side projects, like a discord bot using [Discord.py][discord] API and an [Minecraft][mclink] clone using C# and     [OpenTK][opentklink].
 - Currently learning OpenGL.
 - I'm planning on learning Vulkan and everything Shader, Web-Development and C++.
 
