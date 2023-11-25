@@ -2,9 +2,9 @@
 
 ## I'm a university student, studying 'Computer Science and Engineering'.
 - I'm interested in Game Development and Game Design, and all the algorithms that make games possible, light-weight and visually amazing.
-- Currently working on 3 games in ~~[Unity][unity]~~ (all of these games are being converted into [Godot][godotlink], due to Unity doing a big oopsie) and some side projects, like a discord bot, a [Minecraft][mclink] clone using C# and [OpenTK][opentklink], and an attempt at the same MC clone using Vulkan and C++.
-- Currently learning OpenGL and C++.
-- I'm planning on learning more about Vulkan and everything Shader, Web-Development and C++.
+- Currently working on 3 games in ~~[Unity][unity]~~ (all of these games are being converted into [Godot][godotlink], due to Unity doing a big oopsie) and some side projects, like a discord bot, a Voxel Engine inspired by [Minecraft][mclink] using [Rust][rustlink] and [Vulkano][vulkanolink], transfered from an attempt to do the same in C# and [OpenTK][opentklink].
+- Currently learning OpenGL, Vulkan and C++.
+- I'm planning on learning more about Web-Development and C++.
 
 <br />
 
@@ -26,3 +26,5 @@
 [mclink]: https://www.minecraft.net/en-us
 [opentklink]: https://opentk.net/
 [godotlink]: https://godotengine.org/
+[rustlink]: https://www.rust-lang.org/
+[vulkanolink]: https://github.com/vulkano-rs
