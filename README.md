@@ -1,7 +1,7 @@
 ### Hi, I'm Andreas, but people call me Andy.
 
 ## I'm a university student, studying 'Computer Science and Engineering'.
-- I'm interested in Game Development and Game Design, and all the algorithms that make games possible, light-weight and visually amazing.
+- I'm interested in Game Development and Design, Computer Graphics and all the algorithms that make games possible, light-weight and visually amazing.
 - Currently working on a Voxel Engine inspired by [Minecraft][mclink] using [Rust][rustlink] and [Vulkano][vulkanolink], transfered from an attempt to do the same in C# and [OpenTK][opentklink]. I'm also slowly working on some side projects, like 3 games made in ~~[Unity][unity]~~ (all of these games are being converted into [Godot][godotlink], due to Unity doing a big oopsie) and a discord bot.
 - Currently learning Vulkan, Rust and OpenGL.
 - I'm planning on learning more about Web-Development and C++.
