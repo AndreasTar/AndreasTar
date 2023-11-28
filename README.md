@@ -8,7 +8,7 @@
 
 <br />
 
-<!-- [![Anurag's GitHub stats](vercel-github-stats-personal-fgshv749s-andreastars-projects.vercel.app/api?username=AndreasTar&show_icons=true&hide_border=true&hide=issues,contribs&count_private=true&theme=github_dark)](https://github.com/AndreasTar/VercelGithubStatsPersonal)
+<!-- [![Anurag's GitHub stats](https://vercel-github-stats-personal-fgshv749s-andreastars-projects.vercel.app/api?username=AndreasTar&show_icons=true&hide_border=true&hide=issues,contribs&count_private=true&theme=github_dark&langs_count=9&bg_color=0,4d014a,fffefe)](https://github.com/AndreasTar/VercelGithubStatsPersonal)
 
 
 [![Top Langs](vercel-github-stats-personal-fgshv749s-andreastars-projects.vercel.app/api/top-langs/?username=AndreasTar&layout=compact)](https://github.com/AndreasTar/VercelGithubStatsPersonal) -->
