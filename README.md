@@ -8,10 +8,10 @@
 
 <br />
 
-<!-- [![Anurag's GitHub stats](vercel-github-stats-personal-atdcx7tph-andreastars-projects.vercel.app/api?username=AndreasTar&show_icons=true&hide_border=true&hide=issues,contribs&count_private=true&theme=github_dark)](https://github.com/AndreasTar/VercelGithubStatsPersonal)
+<!-- [![Anurag's GitHub stats](vercel-github-stats-personal-fgshv749s-andreastars-projects.vercel.app/api?username=AndreasTar&show_icons=true&hide_border=true&hide=issues,contribs&count_private=true&theme=github_dark)](https://github.com/AndreasTar/VercelGithubStatsPersonal)
 
 
-[![Top Langs](vercel-github-stats-personal-atdcx7tph-andreastars-projects.vercel.app/api/top-langs/?username=AndreasTar&layout=compact)](https://github.com/AndreasTar/VercelGithubStatsPersonal) -->
+[![Top Langs](vercel-github-stats-personal-fgshv749s-andreastars-projects.vercel.app/api/top-langs/?username=AndreasTar&layout=compact)](https://github.com/AndreasTar/VercelGithubStatsPersonal) -->
 
 <a href="https://github.com/AndreasTar/VercelGithubStatsPersonal">
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=AndreasTar&show_icons=true&hide_border=true&hide=issues,contribs&count_private=true&theme=github_dark" />
