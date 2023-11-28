@@ -14,7 +14,7 @@
 [![Top Langs](vercel-github-stats-personal-fgshv749s-andreastars-projects.vercel.app/api/top-langs/?username=AndreasTar&layout=compact)](https://github.com/AndreasTar/VercelGithubStatsPersonal) -->
 
 <a href="https://github.com/AndreasTar/VercelGithubStatsPersonal">
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=AndreasTar&show_icons=true&hide_border=true&hide=issues,contribs&count_private=true&theme=github_dark&langs_count=9&bg_color=0,4d014a,0d1117&card_width=1100" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=AndreasTar&show_icons=true&hide_border=true&hide=issues,contribs&count_private=true&theme=github_dark&langs_count=9&line_height=36&bg_color=0,4d014a,0d1117&card_width=1100" />
 </a>
 
 <a href="https://github.com/AndreasTar/VercelGithubStatsPersonal">
