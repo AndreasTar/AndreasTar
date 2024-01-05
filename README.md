@@ -9,13 +9,14 @@
 <br />
 
 
-
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=AndreasTar&show_icons=true&hide_border=true&hide=issues,contribs&count_private=true&theme=github_dark&langs_count=9&line_height=36&bg_color=00000000,4d014aff,0d1117ff,0d1117ff&card_width=399")](https://github.com/anuraghazra/github-readme-stats)
-
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api/top-langs/?username=AndreasTar&layout=compact&hide_border=true&count_private=true&theme=github_dark&langs_count=20&bg_color=000000000,0d1117ff,0d1117ff,4d014aff&card_width=399")](https://github.com/anuraghazra/github-readme-stats)
+| <a href = "https://github.com/anuraghazra/github-readme-stats"><img align="center" src = "https://github-readme-stats.vercel.app/api?username=AndreasTar&show_icons=true&hide_border=true&hide=issues,contribs&include_all_commits=true&theme=github_dark&langs_count=9&line_height=36&bg_color=00000000,4d014aff,0d1117ff,0d1117ff&card_width=400" /></a> | <a href = "https://github.com/anuraghazra/github-readme-stats"><img align="center" src = "https://github-readme-stats.vercel.app/api/top-langs/?username=AndreasTar&layout=compact&hide_border=true&include_all_commits=true&theme=github_dark&langs_count=20&bg_color=000000000,0d1117ff,0d1117ff,4d014aff&card_width=400" /></a>
 
 
 <!--
+
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=AndreasTar&show_icons=true&hide_border=true&hide=issues,contribs&include_all_commits=true&theme=github_dark&langs_count=9&line_height=36&bg_color=00000000,4d014aff,0d1117ff,0d1117ff&card_width=400")](https://github.com/anuraghazra/github-readme-stats)
+
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api/top-langs/?username=AndreasTar&layout=compact&hide_border=true&include_all_commits=true&theme=github_dark&langs_count=20&bg_color=000000000,0d1117ff,0d1117ff,4d014aff&card_width=400")](https://github.com/anuraghazra/github-readme-stats)
 
 <a href="https://github.com/AndreasTar/VercelGithubStatsPersonal">
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=AndreasTar&show_icons=true&hide_border=true&hide=issues,contribs&count_private=true&theme=github_dark&langs_count=9&line_height=36&bg_color=0,4d014a,0d1117,0d1117&card_width=400" />
