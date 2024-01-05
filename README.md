@@ -8,10 +8,14 @@
 
 <br />
 
-<!-- [![Anurag's GitHub stats](https://vercel-github-stats-personal-fgshv749s-andreastars-projects.vercel.app/api?username=AndreasTar&show_icons=true&hide_border=true&hide=issues,contribs&count_private=true&theme=github_dark&langs_count=9&bg_color=0,4d014a,fffefe)](https://github.com/AndreasTar/VercelGithubStatsPersonal)
 
 
-[![Top Langs](vercel-github-stats-personal-fgshv749s-andreastars-projects.vercel.app/api/top-langs/?username=AndreasTar&layout=compact)](https://github.com/AndreasTar/VercelGithubStatsPersonal) -->
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=AndreasTar&show_icons=true&hide_border=true&hide=issues,contribs&count_private=true&theme=github_dark&langs_count=9&line_height=36&bg_color=0,4d014a,0d1117,0d1117&card_width=400")](https://github.com/anuraghazra/github-readme-stats)
+
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api/top-langs/?username=AndreasTar&layout=compact&hide_border=true&count_private=true&theme=github_dark&langs_count=20&bg_color=0,0d1117,0d1117,4d014a&card_width=400")](https://github.com/anuraghazra/github-readme-stats)
+
+
+<!--
 
 <a href="https://github.com/AndreasTar/VercelGithubStatsPersonal">
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=AndreasTar&show_icons=true&hide_border=true&hide=issues,contribs&count_private=true&theme=github_dark&langs_count=9&line_height=36&bg_color=0,4d014a,0d1117,0d1117&card_width=400" />
@@ -21,6 +25,7 @@
   <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AndreasTar&layout=compact&hide_border=true&count_private=true&theme=github_dark&langs_count=20&bg_color=0,0d1117,0d1117,4d014a&card_width=400" />
 </a>
 
+-->
 
 [unity]: https://unity.com/
 [mclink]: https://www.minecraft.net/en-us
