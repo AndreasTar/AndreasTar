@@ -15,10 +15,8 @@ import requests
 LOG_FILE_PATH = "data/log.xml"
 BIRTHDAY = datetime.datetime(2001, 3, 18)
 
-#HEADERS = {'authorization': 'token '+ os.environ['ACCESS_TOKEN']}
-HEADERS = {'authorization': 'token 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'}
-#USER_NAME = os.environ['USER_NAME'] # 'AndreasTar'
-USER_NAME = 'AndreasTar'
+HEADERS = {'authorization': 'token '+ os.environ['ACCESS_TOKEN']}
+USER_NAME = os.environ['USER_NAME'] # 'AndreasTar'
 
 QUERY_COUNT = {
     'fetchUserData': 0,
