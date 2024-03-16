@@ -12,7 +12,10 @@ import time
 import os
 import requests
 
-LOG_FILE_PATH = "data/log.xml"
+import svg
+from textwrap import dedent
+
+
 BIRTHDAY = datetime.datetime(2001, 3, 18)
 
 HEADERS = {'authorization': 'token '+ os.environ['ACCESS_TOKEN']}
@@ -149,6 +152,40 @@ def _formatData(query_type, difference, funct_return=False, whitespace=0):
     if whitespace:
         return f"{'{:,}'.format(funct_return): <{whitespace}}"
     return funct_return
+
+def createSvgData():
+
+    svgwidth = 970
+    svgheight = 530
+
+    dy = 20
+
+
+    styles = svg.Style(
+        text = dedent("""
+                      .category { font: bold 30px; fill: 111111 }
+                      .data { fill: 222222 }
+                      """), 
+    )
+
+    elements = [
+        styles,
+
+        svg.Text(x=370, y=35, fill='333333'),
+        svg.TSpan(x=370, y=35, class_=["category"], text="Andrew Tarasidis"),
+        svg.TSpan(dy, text="--------------------"),
+        svg.TSpan(dy, text="--------------------"),
+        svg.TSpan(dy, text="--------------------"),
+        
+    ]
+
+    file = svg.SVG(
+        width = svgwidth,
+        height = svgheight,
+        elements = elements,
+    )
+
+    print(file)
 
 if __name__ == '__main__':
 
