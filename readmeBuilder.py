@@ -18,8 +18,8 @@ from textwrap import dedent
 
 BIRTHDAY = datetime.datetime(2001, 3, 18)
 
-HEADERS = {'authorization': 'token '+ os.environ['ACCESS_TOKEN']}
-USER_NAME = os.environ['USER_NAME'] # 'AndreasTar'
+#HEADERS = {'authorization': 'token '+ os.environ['ACCESS_TOKEN']}
+#USER_NAME = os.environ['USER_NAME'] # 'AndreasTar'
 
 QUERY_COUNT = {
     'fetchUserData': 0,
@@ -163,19 +163,95 @@ def createSvgData():
 
     styles = svg.Style(
         text = dedent("""
-                      .category { font: bold 30px; fill: 111111 }
-                      .data { fill: 222222 }
+                      .category { font: bold 30px; fill: FF9536 }
+                      .data { fill: 8FE9FF }
+                      .extras { fill: 999999 }
+                      .titles { fill: FF5D79 }
                       """), 
     )
+
+    # IDEA on top of the readme, a procedural ascii day-night cycle scene
+
+    # #FF9536 main
+    # #8FE9FF data
+    # #999999 extra data
+    # #FF5D79 titles
+
+    # i want to have:
+
+    # date of birth | done almost
+    # where i live | done
+    # degree / uni | done
+
+    # languages | done
+    # hobbies | done
+    # interests | done
+    # projects working on rn | done
+
+    # email
+    # linkedin
+    # other contact info
+    # the github stats i fetched
+
+    # then below the snake, num of people who visited
+
+
 
     elements = [
         styles,
 
-        svg.Text(x=370, y=35, fill='333333'),
-        svg.TSpan(x=370, y=35, class_=["category"], text="Andrew Tarasidis"),
-        svg.TSpan(dy, text="--------------------"),
-        svg.TSpan(dy, text="--------------------"),
-        svg.TSpan(dy, text="--------------------"),
+        svg.Text(x=370, y=35, fill='333333', elements = [
+
+            svg.TSpan(x=370, y=35, class_=["category"], text="Andrew Tarasidis"),
+
+            svg.TSpan(dy = dy, x = 370, class_=["titles"], text="Info"),
+            svg.TSpan(dy = dy, x = 370, text="--------------------"),
+            svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Uptime"),
+            svg.TSpan(text=": "),
+            svg.TSpan(class_ = ["data"], text="FETCHAGEDATA"),
+
+            svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Born in"),
+            svg.TSpan(text=": "),
+            svg.TSpan(class_ = ["data"], text="Greece"),
+
+            svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Currently located in"),
+            svg.TSpan(text=": "),
+            svg.TSpan(class_ = ["data"], text="Ioannina, Greece"),
+
+            svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Studies"),
+            svg.TSpan(text=": "),
+            svg.TSpan(class_ = ["data"], text="Computer Science and Engineering, UOI"),
+
+            svg.TSpan(dy = dy, x = 370, class_=["titles"], text="Capabilities"),
+            svg.TSpan(dy = dy, x = 370, text="--------------------"),
+            svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Languages"),
+            svg.TSpan(text=": "),
+            svg.TSpan(class_ = ["data"], text="C# | Rust | Python | Java"),
+            svg.TSpan(class_ = ["extras"], text="( Knowledge in: C | C++ | GLSL)"),
+
+            svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Interests"),
+            svg.TSpan(text=": "),
+            svg.TSpan(class_ = ["data"], text="Game Development | Computer Graphics | Software Development"),
+
+            svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Currently Working on"),
+            svg.TSpan(text=": "),
+            svg.TSpan(class_ = ["data"], text="Voxel engine with Rust and Vulkano | Desktop app with multiple helper functionalities"),
+
+            svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Hobbies"),
+            svg.TSpan(text=": "),
+            svg.TSpan(class_ = ["data"], text="Drawing | Guitar | Working out | Playing Games | Helping People | Being Kind"),
+
+            svg.TSpan(dy = dy, x = 370, class_=["titles"], text="Contact Me"),
+            svg.TSpan(dy = dy, x = 370, text="--------------------"),
+            svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Email"),
+            svg.TSpan(text=": "),
+            svg.TSpan(class_ = ["data"], text="andytgamedev@gmail.com"),
+
+            svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="LinkedIn"),
+            svg.TSpan(text=": "),
+            svg.TSpan(class_ = ["data"], text="in/andreas-tarasidis"),
+            ]
+        ),
         
     ]
 
@@ -185,9 +261,13 @@ def createSvgData():
         elements = elements,
     )
 
-    print(file)
+    f = open("temp.svg", mode='w', encoding='utf-8')
+    f.write(file.as_str())
+    f.close()
 
 if __name__ == '__main__':
+
+    createSvgData()
 
     userData, fetchUserTime = _performanceCounter(fetchUserData, USER_NAME)
     _formatData('account data', fetchUserTime)
