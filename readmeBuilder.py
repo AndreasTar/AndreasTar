@@ -200,11 +200,11 @@ def createSvgData():
     elements = [
         styles,
 
-        svg.Text(x=370, y=35, fill='333333', elements = [
+        svg.Text(x=370, y=35, fill='333333', class_='ascii', elements = [
 
             svg.TSpan(x=370, y=35, class_=["category"], text="Andrew Tarasidis"),
 
-            svg.TSpan(dy = dy, x = 370, class_=["titles"], text="Info"),
+            svg.TSpan(dy = dy*2, x = 370, class_=["titles"], text="Info"),
             svg.TSpan(dy = dy, x = 370, text="--------------------"),
             svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Uptime"),
             svg.TSpan(text=": "),
@@ -222,12 +222,12 @@ def createSvgData():
             svg.TSpan(text=": "),
             svg.TSpan(class_ = ["data"], text="Computer Science and Engineering, UOI"),
 
-            svg.TSpan(dy = dy, x = 370, class_=["titles"], text="Capabilities"),
+            svg.TSpan(dy = dy*2, x = 370, class_=["titles"], text="Capabilities"),
             svg.TSpan(dy = dy, x = 370, text="--------------------"),
             svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Languages"),
             svg.TSpan(text=": "),
             svg.TSpan(class_ = ["data"], text="C# | Rust | Python | Java"),
-            svg.TSpan(class_ = ["extras"], text="( Knowledge in: C | C++ | GLSL)"),
+            svg.TSpan(dy = dy, x = 400, class_ = ["extras"], text=" ( Knowledge in: C | C++ | GLSL)"),
 
             svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Interests"),
             svg.TSpan(text=": "),
@@ -235,13 +235,13 @@ def createSvgData():
 
             svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Currently Working on"),
             svg.TSpan(text=": "),
-            svg.TSpan(class_ = ["data"], text="Voxel engine with Rust and Vulkano | Desktop app with multiple helper functionalities"),
+            svg.TSpan(dy = dy, x = 400, class_ = ["data"], text="Voxel engine with Rust and Vulkano | Desktop app with multiple helper functionalities"),
 
             svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Hobbies"),
             svg.TSpan(text=": "),
-            svg.TSpan(class_ = ["data"], text="Drawing | Guitar | Working out | Playing Games | Helping People | Being Kind"),
+            svg.TSpan(class_ = ["data"], text="Drawing | Playing Guitar | Working out | Playing Games | Helping People | Being Kind"),
 
-            svg.TSpan(dy = dy, x = 370, class_=["titles"], text="Contact Me"),
+            svg.TSpan(dy = dy*2, x = 370, class_=["titles"], text="Contact Me"),
             svg.TSpan(dy = dy, x = 370, text="--------------------"),
             svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Email"),
             svg.TSpan(text=": "),
