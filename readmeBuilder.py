@@ -18,8 +18,8 @@ from textwrap import dedent
 
 BIRTHDAY = datetime.datetime(2001, 3, 18)
 
-#HEADERS = {'authorization': 'token '+ os.environ['ACCESS_TOKEN']}
-#USER_NAME = os.environ['USER_NAME'] # 'AndreasTar'
+HEADERS = {'authorization': 'token '+ os.environ['ACCESS_TOKEN']}
+USER_NAME = os.environ['USER_NAME'] # 'AndreasTar'
 
 QUERY_COUNT = {
     'fetchUserData': 0,
@@ -144,7 +144,7 @@ def _performanceCounter(funct, *args):
 
 def _formatData(query_type, difference, funct_return=False, whitespace=0):
     """
-    Prints a formatted time differential
+    Prints a formatted time differential for performance metrics.\n
     Returns formatted result if whitespace is specified, otherwise returns raw result
     """
     print('{:<27}'.format('   ' + query_type + ':'), sep='', end='')
@@ -153,29 +153,24 @@ def _formatData(query_type, difference, funct_return=False, whitespace=0):
         return f"{'{:,}'.format(funct_return): <{whitespace}}"
     return funct_return
 
-def createSvgData():
+def createSvgData(age, commits, stars):
 
     svgwidth = 970
-    svgheight = 530
+    svgheight = 640
 
     dy = 20
 
-
     styles = svg.Style(
         text = dedent("""
-                      .category { font: bold 30px; fill: FF9536 }
-                      .data { fill: 8FE9FF }
-                      .extras { fill: 999999 }
-                      .titles { fill: FF5D79 }
+                      .titles { fill: #3EFF01 }
+                      .category { font: bold 30px; fill: #FF9536 }
+                      .data { fill: #8FE9FF }
+                      .extras { fill: #AAAAAA }
+                      text, tspan { fill: #EEEEEE }
                       """), 
     )
 
     # IDEA on top of the readme, a procedural ascii day-night cycle scene
-
-    # #FF9536 main
-    # #8FE9FF data
-    # #999999 extra data
-    # #FF5D79 titles
 
     # i want to have:
 
@@ -188,27 +183,31 @@ def createSvgData():
     # interests | done
     # projects working on rn | done
 
-    # email
-    # linkedin
+    # email | done
+    # linkedin | done
     # other contact info
     # the github stats i fetched
 
-    # then below the snake, num of people who visited
+    # then below the snake
 
 
 
     elements = [
         styles,
 
-        svg.Text(x=370, y=35, fill='333333', class_='ascii', elements = [
+        svg.Rect(width=svgwidth, height=svgheight, fill="#111111", rx=15),
 
-            svg.TSpan(x=370, y=35, class_=["category"], text="Andrew Tarasidis"),
+        svg.Text(x=370, y=35, fill='#333333', class_='ascii', elements = [
+
+            svg.TSpan(x=370, y=35, class_=["category"], font_weight="bolder" ,text="Andreas Tarasidis"),
+
+            # ------------------------------------------------------------------------------
 
             svg.TSpan(dy = dy*2, x = 370, class_=["titles"], text="Info"),
             svg.TSpan(dy = dy, x = 370, text="--------------------"),
             svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Uptime"),
             svg.TSpan(text=": "),
-            svg.TSpan(class_ = ["data"], text="FETCHAGEDATA"),
+            svg.TSpan(class_ = ["data"], text=age),
 
             svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Born in"),
             svg.TSpan(text=": "),
@@ -222,12 +221,14 @@ def createSvgData():
             svg.TSpan(text=": "),
             svg.TSpan(class_ = ["data"], text="Computer Science and Engineering, UOI"),
 
+            # ------------------------------------------------------------------------------
+
             svg.TSpan(dy = dy*2, x = 370, class_=["titles"], text="Capabilities"),
             svg.TSpan(dy = dy, x = 370, text="--------------------"),
             svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Languages"),
             svg.TSpan(text=": "),
-            svg.TSpan(class_ = ["data"], text="C# | Rust | Python | Java"),
-            svg.TSpan(dy = dy, x = 400, class_ = ["extras"], text=" ( Knowledge in: C | C++ | GLSL)"),
+            svg.TSpan(class_ = ["data"], text="C# | Rust | Python | Java | C++ | C | GLSL"),
+            svg.TSpan(dy = dy, x = 400, class_ = ["extras"], text="( Knowledge in: Verilog | VHDL | Assembly | Octave)"),
 
             svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Interests"),
             svg.TSpan(text=": "),
@@ -235,21 +236,38 @@ def createSvgData():
 
             svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Currently Working on"),
             svg.TSpan(text=": "),
-            svg.TSpan(dy = dy, x = 400, class_ = ["data"], text="Voxel engine with Rust and Vulkano | Desktop app with multiple helper functionalities"),
+            svg.TSpan(class_ = ["data"], text=" "),
+            svg.TSpan(dy = dy, x = 400, class_ = ["data"], text="| Voxel engine with Rust and Vulkano"),
+            svg.TSpan(dy = dy, x = 400, class_ = ["data"], text="| Desktop app with multiple helper functionalities with Rust and Slint"),
 
             svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Hobbies"),
             svg.TSpan(text=": "),
-            svg.TSpan(class_ = ["data"], text="Drawing | Playing Guitar | Working out | Playing Games | Helping People | Being Kind"),
+            svg.TSpan(class_ = ["data"], text="Drawing | Playing Guitar | Working out | Video Games |"),
+            svg.TSpan(dy = dy, x = 440, class_ = ["data"], text="Helping People | Being Kind | Improving Myself"),
+
+            # ------------------------------------------------------------------------------
 
             svg.TSpan(dy = dy*2, x = 370, class_=["titles"], text="Contact Me"),
             svg.TSpan(dy = dy, x = 370, text="--------------------"),
             svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Email"),
             svg.TSpan(text=": "),
-            svg.TSpan(class_ = ["data"], text="andytgamedev@gmail.com"),
+            svg.TSpan(class_ = ["data"], text="andreas.tarasidis@gmail.com"),
 
             svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="LinkedIn"),
             svg.TSpan(text=": "),
             svg.TSpan(class_ = ["data"], text="in/andreas-tarasidis"),
+
+            # ------------------------------------------------------------------------------
+
+            svg.TSpan(dy = dy*2, x = 370, class_=["titles"], text="Github Stats"),
+            svg.TSpan(dy = dy, x = 370, text="--------------------"),
+            svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Commits"),
+            svg.TSpan(text=": "),
+            svg.TSpan(class_ = ["data"], text=commits),
+
+            svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Stars"),
+            svg.TSpan(text=": "),
+            svg.TSpan(class_ = ["data"], text=stars),
             ]
         ),
         
@@ -267,17 +285,22 @@ def createSvgData():
 
 if __name__ == '__main__':
 
-    createSvgData()
-
     userData, fetchUserTime = _performanceCounter(fetchUserData, USER_NAME)
     _formatData('account data', fetchUserTime)
+
+    # user id and create at time X
     userID, userCreatedData = userData
+
     ageData, ageCalculatorTime = _performanceCounter(ageCalculator)
     _formatData('age data (internal)', ageCalculatorTime)
+
     #userCreatedData, datetime.datetime.now().replace(microsecond=0).isoformat()+'Z'
     commitData, fetchCommitsTime = _performanceCounter(fetchCommits)
     _formatData('commits data', fetchCommitsTime, commitData)
+
     starsData, fetchStarsTime = _performanceCounter(fetchStars)
     _formatData('stars data', fetchStarsTime, starsData)
+
+    createSvgData(ageData, commitData, starsData)
 
 
