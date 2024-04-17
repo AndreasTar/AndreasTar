@@ -63,7 +63,7 @@ def makeRequest(funcName, query, vars):
 def fetchCommits(startDate = None, endDate = None) -> int:
     """
     Uses GitHub's GraphQL v4 API to fetch the total commit count between 
-    the input dates
+    the input dates (MAX date differential: 1 year)
     """
 
     query = """
@@ -156,17 +156,17 @@ def _formatData(query_type, difference, funct_return=False, whitespace=0):
 def createSvgData(age, commits, stars):
 
     svgwidth = 970
-    svgheight = 640
+    svgheight = 620
 
     dy = 20
 
     styles = svg.Style(
         text = dedent("""
                       .titles { fill: #3EFF01 }
-                      .category { font: bold 30px; fill: #FF9536 }
+                      .category { fill: #FF9536 }
                       .data { fill: #8FE9FF }
                       .extras { fill: #AAAAAA }
-                      text, tspan { fill: #EEEEEE }
+                      text, tspan { font-family: Consolas; font-size: 94%; fill: #BBBBBB }
                       """), 
     )
 
@@ -174,7 +174,7 @@ def createSvgData(age, commits, stars):
 
     # i want to have:
 
-    # date of birth | done almost
+    # date of birth | done
     # where i live | done
     # degree / uni | done
 
@@ -186,7 +186,7 @@ def createSvgData(age, commits, stars):
     # email | done
     # linkedin | done
     # other contact info
-    # the github stats i fetched
+    # the github stats i fetched | done
 
     # then below the snake
 
@@ -264,8 +264,9 @@ def createSvgData(age, commits, stars):
             svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Commits"),
             svg.TSpan(text=": "),
             svg.TSpan(class_ = ["data"], text=commits),
+            svg.TSpan(class_ = ["extras"], text=" ( Past 365 days )"),
 
-            svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Stars"),
+            svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Total Stars"),
             svg.TSpan(text=": "),
             svg.TSpan(class_ = ["data"], text=stars),
             ]
@@ -300,6 +301,7 @@ if __name__ == '__main__':
 
     starsData, fetchStarsTime = _performanceCounter(fetchStars)
     _formatData('stars data', fetchStarsTime, starsData)
+    _, starsData = starsData
 
     createSvgData(ageData, commitData, starsData)
 
