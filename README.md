@@ -1,3 +1,5 @@
+# README is being updated. Check again soon
+
 ### Hi, I'm Andreas, but people call me Andy.
 
 ## I'm a university student, studying 'Computer Science and Engineering'.
