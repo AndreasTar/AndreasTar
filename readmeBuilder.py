@@ -1,7 +1,7 @@
 '''
 Inspired by GitHub user 'Andrew6rant's README.
 Their profile link : https://github.com/Andrew6rant
-Their README repo link : https://github.com/Andrew6rant
+Their README repo link : https://github.com/Andrew6rant/Andrew6rant
 '''
 
 import datetime
@@ -26,6 +26,69 @@ QUERY_COUNT = {
     'fetchStars': 0,
     'fetchCommits': 0
 }
+
+
+
+
+profile1 = """                        .....              
+               ..+#+.+#######+-.           
+            .-##################+-.        
+           .+#####################+.       
+          .########################-       
+         .############++++++#######+.      
+         .#####+--....    ....-+###.       
+         -###--...          ...-###-       
+         .##+--....       .....+####       
+         +##++++-..   ..-++++-..+###.      
+        .####++##+-...-----...-..+##.      
+        .#++######+-...+###++....+#+.      
+        -#+-++-+++--....--..   ..-#-..     
+        ++--...-+--......      ...-...     
+        -+--..--+#-..--....   .. .--..     
+        .#+--######+##+++--- ....-...      
+        .+#--####+--....-#+-....-...       
+         .##+#--++--......-....---         
+          .####++++++-...-.------.         
+           .####+++++---+++++++..          
+             +######++-+#####-.. .         
+              ##########++--.......        
+              -++---................       
+              .++--...................     
+              .---...................--..  
+          .-+##----...........--++########.
+     -+#########-+#########################
+     ######################################"""
+
+profile2 = """                           .  .                   
+                  .!J!.^JPGGPP5PY~:.             
+              .!5G&&@&&&&&&&&&&###BP7^           
+             !G#&&&&&&&&&&&&&&&&&##BGYY.         
+           :B&&&&@@&@@&&@@&&&&&@@&&#&##?         
+           B&@@@&&#GP555Y??????YPB&&##GY.        
+          .#@@&PJ~:.... .       ..^Y##B7         
+          .#&G~:...                :Y##Y         
+          .&B!:....               .~5BBB:        
+          J&5JJJ?!:..     .^!!!!~^..!PGG^        
+          #GP5YYY5Y?^.  ..^77!^::::  ^BP:        
+         :&J7?5Y5YYY?:   .!7J?!^:    ^GP~        
+         ?B~~!!!~~!!~.   ..:.....    ^G7..       
+        .YJ^:....^~~.                .7  .       
+         7?~:...:!?J~..::..          ..:..       
+         !5!:.YP55PP57YJ7!~~~^~.     ....        
+         .Y5~:JJ5P7~^......!YJ~.   ..:           
+           GBJJ!^!!~:.........  ....~^           
+           .B&&G!~!7!!~^.  .:..^~~^^:.           
+             J&&GJ7?7!~^:.^~?J?JY?~.             
+              .#&#GP5Y?777Y5GGG5?:               
+               ^GBBGGGP5YYJ77~^.     .           
+                ?J7~::......         ..          
+                ~!~^..               ....        
+                ~~^:.. ..              ..^   
+           :~?G#?:::....       ..:~!?YPB&&@Y
+      ?YB#&@@@@@&5?Y5PGGGGB###&&&@@@@@@@@@@B
+      G&&@@@&&&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"""
+
+PROFILE_TEXT = profile2.replace("&","&amp;").replace(">","&gt;").replace("<","&lt;").splitlines()
 
 def ageCalculator() -> str:
     """
@@ -166,6 +229,7 @@ def createSvgData(age, commits, stars):
                       .category { fill: #FF9536 }
                       .data { fill: #8FE9FF }
                       .extras { fill: #AAAAAA }
+                      .profile { fill: #E3DCE9; white-space: pre }
                       text, tspan { font-family: Consolas; font-size: 94%; fill: #BBBBBB }
                       """), 
     )
@@ -190,13 +254,10 @@ def createSvgData(age, commits, stars):
 
     # then below the snake
 
-
-
     elements = [
         styles,
 
         svg.Rect(width=svgwidth, height=svgheight, fill="#111111", rx=15),
-
         svg.Text(x=370, y=35, fill='#333333', class_='ascii', elements = [
 
             svg.TSpan(x=370, y=35, class_=["category"], font_weight="bolder" ,text="Andreas Tarasidis"),
@@ -238,7 +299,7 @@ def createSvgData(age, commits, stars):
             svg.TSpan(text=": "),
             svg.TSpan(class_ = ["data"], text=" "),
             svg.TSpan(dy = dy, x = 400, class_ = ["data"], text="| Voxel engine with Rust and Vulkano"),
-            svg.TSpan(dy = dy, x = 400, class_ = ["data"], text="| Desktop app with multiple helper functionalities with Rust and Slint"),
+            svg.TSpan(dy = dy, x = 400, class_ = ["data"], text="| Desktop app with multiple helper functionalities with Rust and iced"),
 
             svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Hobbies"),
             svg.TSpan(text=": "),
@@ -269,8 +330,39 @@ def createSvgData(age, commits, stars):
             svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Total Stars"),
             svg.TSpan(text=": "),
             svg.TSpan(class_ = ["data"], text=stars),
+
+
+
+            svg.TSpan(x=0, y=55,  class_='profile', text=PROFILE_TEXT[0]),
+            svg.TSpan(x=0, dy=dy, class_='profile', text=PROFILE_TEXT[1]),
+            svg.TSpan(x=0, dy=dy, class_='profile', text=PROFILE_TEXT[2]),
+            svg.TSpan(x=0, dy=dy, class_='profile', text=PROFILE_TEXT[3]),
+            svg.TSpan(x=0, dy=dy, class_='profile', text=PROFILE_TEXT[4]),
+            svg.TSpan(x=0, dy=dy, class_='profile', text=PROFILE_TEXT[5]),
+            svg.TSpan(x=0, dy=dy, class_='profile', text=PROFILE_TEXT[6]),
+            svg.TSpan(x=0, dy=dy, class_='profile', text=PROFILE_TEXT[7]),
+            svg.TSpan(x=0, dy=dy, class_='profile', text=PROFILE_TEXT[8]),
+            svg.TSpan(x=0, dy=dy, class_='profile', text=PROFILE_TEXT[9]),
+            svg.TSpan(x=0, dy=dy, class_='profile', text=PROFILE_TEXT[10]),
+            svg.TSpan(x=0, dy=dy, class_='profile', text=PROFILE_TEXT[11]),
+            svg.TSpan(x=0, dy=dy, class_='profile', text=PROFILE_TEXT[12]),
+            svg.TSpan(x=0, dy=dy, class_='profile', text=PROFILE_TEXT[13]),
+            svg.TSpan(x=0, dy=dy, class_='profile', text=PROFILE_TEXT[14]),
+            svg.TSpan(x=0, dy=dy, class_='profile', text=PROFILE_TEXT[15]),
+            svg.TSpan(x=0, dy=dy, class_='profile', text=PROFILE_TEXT[16]),
+            svg.TSpan(x=0, dy=dy, class_='profile', text=PROFILE_TEXT[17]),
+            svg.TSpan(x=0, dy=dy, class_='profile', text=PROFILE_TEXT[18]),
+            svg.TSpan(x=0, dy=dy, class_='profile', text=PROFILE_TEXT[19]),
+            svg.TSpan(x=0, dy=dy, class_='profile', text=PROFILE_TEXT[20]),
+            svg.TSpan(x=0, dy=dy, class_='profile', text=PROFILE_TEXT[21]),
+            svg.TSpan(x=0, dy=dy, class_='profile', text=PROFILE_TEXT[22]),
+            svg.TSpan(x=0, dy=dy, class_='profile', text=PROFILE_TEXT[23]),
+            svg.TSpan(x=0, dy=dy, class_='profile', text=PROFILE_TEXT[24]),
+            svg.TSpan(x=0, dy=dy, class_='profile', text=PROFILE_TEXT[25]),
+            svg.TSpan(x=0, dy=dy, class_='profile', text=PROFILE_TEXT[26]),
+            svg.TSpan(x=0, dy=dy, class_='profile', text=PROFILE_TEXT[27]),
             ]
-        ),
+        )
         
     ]
 
