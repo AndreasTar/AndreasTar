@@ -1,7 +1,7 @@
 name: README build
 on:
   schedule:
-    - cron: "0 19 * * *"
+    - cron: "0 19 * * SUNDAY"  # Every Sunday at 19:00 UTC
 jobs:
   build:
     runs-on: ubuntu-latest
