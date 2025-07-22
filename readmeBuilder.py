@@ -5,7 +5,6 @@ Their README repo link : https://github.com/Andrew6rant/Andrew6rant
 '''
 
 import datetime
-from xml.dom import minidom
 from dateutil import relativedelta
 import time
 
@@ -258,7 +257,7 @@ def createSvgData(age, commits, stars):
                       .category { fill: #FF9536 }
                       .data { fill: #8FE9FF }
                       .extras { fill: #AAAAAA }
-                      .hidden { fill: #757575 }
+                      .stealth { fill: #757575 }
                       .profile { fill: #E3DCE9; white-space: pre }
                       text, tspan { font-family: Consolas; font-size: 94%; fill: #BBBBBB }
                       """), 
@@ -356,7 +355,7 @@ def createSvgData(age, commits, stars):
             svg.TSpan(text=": "),
             svg.TSpan(class_ = ["data"], text=commits),
             svg.TSpan(class_ = ["extras"], text=" ( Past 365 days )"),
-            svg.TSpan(class_ = ["hidden"], text=" Updates every Sunday"),
+            svg.TSpan(class_ = ["stealth"], text=" Updates every Sunday"),
 
             svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Total Stars"),
             svg.TSpan(text=": "),
