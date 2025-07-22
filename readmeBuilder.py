@@ -305,7 +305,7 @@ def createSvgData(age, commits, stars):
 
             svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Currently located in"),
             svg.TSpan(text=": "),
-            svg.TSpan(class_ = ["data"], text="Ioannina, Greece"),
+            svg.TSpan(class_ = ["data"], text="Volos, Greece"),
 
             svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Studies"),
             svg.TSpan(text=": "),
