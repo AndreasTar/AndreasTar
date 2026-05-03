@@ -327,8 +327,8 @@ def createSvgData(age, commits, stars):
             svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Currently Working on"),
             svg.TSpan(text=": "),
             svg.TSpan(class_ = ["data"], text=" "),
-            svg.TSpan(dy = dy, x = 400, class_ = ["data"], text="| Voxel engine with Rust and Vulkano"),
-            svg.TSpan(dy = dy, x = 400, class_ = ["data"], text="| Desktop app with multiple helper functionalities with Rust and iced"),
+            svg.TSpan(dy = dy, x = 400, class_ = ["data"], text="| Voxel engine with Rust and Bevy / Vulkano"),
+            svg.TSpan(dy = dy, x = 400, class_ = ["data"], text="| Desktop app with multiple helper functionalities with Rust and Slint"),
 
             svg.TSpan(dy = dy, x = 370, class_ = ["category"], text="Hobbies"),
             svg.TSpan(text=": "),
